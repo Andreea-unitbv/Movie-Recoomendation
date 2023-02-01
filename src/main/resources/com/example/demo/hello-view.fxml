@@ -28,7 +28,7 @@
                   </Label>
                   <HBox layoutX="206.0" layoutY="264.0" prefHeight="40.0" prefWidth="188.0">
                      <children>
-                        <Button fx:id="loginButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#StartLogin" prefHeight="105.0" prefWidth="108.0" text="Login" textAlignment="CENTER" HBox.hgrow="ALWAYS" />
+                        <Button fx:id="loginButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#showLoginScreen" prefHeight="105.0" prefWidth="108.0" text="Login" textAlignment="CENTER" HBox.hgrow="ALWAYS" />
                         <Button fx:id="registerButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="40.0" prefWidth="115.0" text="Register" textAlignment="CENTER" HBox.hgrow="ALWAYS" />
                      </children>
                   </HBox>

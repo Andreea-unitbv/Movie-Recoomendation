@@ -4,8 +4,8 @@ import java.sql.ResultSet;
 import java.util.Scanner;
 
 public class DBLogin {
-    private DBConnection database;
-    private Scanner scanner;
+    private  DBConnection database;
+    private  Scanner scanner;
 
     public DBLogin() {
         database = new DBConnection();

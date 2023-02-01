@@ -1,6 +1,7 @@
 package com.example.demo.controllers;
 
 import com.example.demo.Login;
+import com.example.demo.Main;
 import com.example.demo.database.DBLogin;
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
@@ -31,15 +32,20 @@ public class LoginController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         roleComboBox.setItems(FXCollections.observableArrayList("admin", "user"));
+        System.out.println("Initialized Login..");
     }
 
     public void loginPressed(ActionEvent event) throws IOException {
-        checkLogin();
+        var loginSuccessful = checkLogin();
+        if (!loginSuccessful) {
+            //TODO: Display text in validation
+        } else {
+            var feedScene = Main.getSceneByName("Feed.fxml");
+            Main.setScene(feedScene);
+        }
     }
 
-    public void checkLogin() throws IOException {
-        Login l = new Login();
-
+    public boolean checkLogin() throws IOException {
         String username = usernameTextField.getText().toString();
         String password = passwordTextField.getText().toString();
         String role = roleComboBox.getValue().toString();
@@ -47,10 +53,11 @@ public class LoginController implements Initializable {
         DBLogin dbLogin = new DBLogin();
 
         if (dbLogin.run(username, password, role)) {
-            l.changeScene("Feed.fxml");
             validation.setText("Succes");
-        } else
+            return true;
+        } else {
             validation.setText("");
+            return false;
+        }
     }
-
 }
