@@ -14,10 +14,10 @@ public class Main extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         this.mainStage = stage;
-        FXMLLoader fxmlLoader = new FXMLLoader(Login.class.getResource("hello-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("hello-view.fxml"));
         Parent root = fxmlLoader.load();
         mainScene = new Scene(root);
-        stage.setTitle("Hello!");
+        stage.setTitle("IMDb");
         stage.setScene(mainScene);
 
         stage.show();
@@ -38,14 +38,5 @@ public class Main extends Application {
         launch();
     }
 
-//    public void changeScene(String fxml) throws IOException{
-//        var getClass = getClass();
-//        var resource = getClass.getResource("LoginPage.fxml");
-//
-//        Parent root = FXMLLoader.load(resource);
-//
-////        Parent pane = FXMLLoader.load(getClass().getResource(fxml));
-//        stg.getScene().setRoot(root);
-//    }
 
 }

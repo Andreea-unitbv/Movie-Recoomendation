@@ -8,11 +8,11 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: orange;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.controllers.LoginController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: yellow;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.controllers.LoginController">
    <children>
-      <VBox layoutX="144.0" layoutY="127.0" prefHeight="147.0" prefWidth="338.0" AnchorPane.bottomAnchor="126.0" AnchorPane.leftAnchor="144.0" AnchorPane.rightAnchor="118.0" AnchorPane.topAnchor="127.0">
+      <VBox layoutX="116.0" layoutY="112.0" prefHeight="175.0" prefWidth="367.0" style="-fx-background-color: pink;" AnchorPane.bottomAnchor="113.0" AnchorPane.leftAnchor="116.0" AnchorPane.rightAnchor="117.0" AnchorPane.topAnchor="112.0">
          <children>
-            <Label fx:id="validation" />
+            <Label fx:id="validation" textFill="#c41818" />
             <HBox alignment="CENTER" prefHeight="72.0" prefWidth="600.0">
                <children>
                   <Label alignment="CENTER" prefHeight="23.0" prefWidth="81.0" text="Username" textAlignment="CENTER" HBox.hgrow="ALWAYS" />
@@ -27,13 +27,13 @@
             </HBox>
             <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
                <children>
-                  <Label prefHeight="21.0" prefWidth="75.0" text="Role" HBox.hgrow="ALWAYS" />
-                  <ComboBox fx:id="roleComboBox" prefHeight="31.0" prefWidth="234.0" HBox.hgrow="ALWAYS" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="22.0" prefWidth="86.0" text="Role" textAlignment="CENTER" HBox.hgrow="ALWAYS" />
+                  <ComboBox fx:id="roleComboBox" prefHeight="29.0" prefWidth="260.0" HBox.hgrow="ALWAYS" />
                </children>
             </HBox>
-            <HBox prefHeight="100.0" prefWidth="200.0">
+            <HBox alignment="CENTER" prefHeight="0.0" prefWidth="97.0">
                <children>
-                  <Button fx:id="loginButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#loginPressed" prefHeight="29.0" prefWidth="203.0" text="Login" HBox.hgrow="ALWAYS" />
+                  <Button fx:id="loginButton" alignment="CENTER" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#loginPressed" prefHeight="6.0" prefWidth="203.0" text="Login" HBox.hgrow="ALWAYS" />
                </children>
             </HBox>
          </children>

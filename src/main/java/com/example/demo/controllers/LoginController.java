@@ -1,6 +1,5 @@
 package com.example.demo.controllers;
 
-import com.example.demo.Login;
 import com.example.demo.Main;
 import com.example.demo.database.DBLogin;
 import javafx.collections.FXCollections;
@@ -27,21 +26,25 @@ public class LoginController implements Initializable {
     private Button loginButton;
     @FXML
     private Label validation;
+    private DBLogin dbLogin;
 
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         roleComboBox.setItems(FXCollections.observableArrayList("admin", "user"));
+        roleComboBox.getSelectionModel().select("admin");
         System.out.println("Initialized Login..");
     }
 
     public void loginPressed(ActionEvent event) throws IOException {
         var loginSuccessful = checkLogin();
-        if (!loginSuccessful) {
-            //TODO: Display text in validation
-        } else {
+        if (loginSuccessful && usernameTextField.getText().toString()=="user") {
             var feedScene = Main.getSceneByName("Feed.fxml");
             Main.setScene(feedScene);
+        }
+        else{
+            var addMovieScene= Main.getSceneByName("AddMoviePage.fxml");
+            Main.setScene(addMovieScene);
         }
     }
 
@@ -50,13 +53,12 @@ public class LoginController implements Initializable {
         String password = passwordTextField.getText().toString();
         String role = roleComboBox.getValue().toString();
 
-        DBLogin dbLogin = new DBLogin();
+        dbLogin = new DBLogin();
 
         if (dbLogin.run(username, password, role)) {
-            validation.setText("Succes");
             return true;
         } else {
-            validation.setText("");
+            validation.setText("Invalid username or password");
             return false;
         }
     }

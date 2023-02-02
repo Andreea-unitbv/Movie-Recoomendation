@@ -14,27 +14,18 @@ import java.io.IOException;
 public class MainController {
     @FXML
     private Button loginButton;
+    @FXML
+    private Button registerButton;
 
     @FXML
     public void showLoginScreen(ActionEvent event) throws IOException {
-//        var resource = Main.class.getResource("LoginPage.fxml");
-//
-//        Parent root = FXMLLoader.load(resource);
-//
-//        Stage stage = new Stage();
-//        stage.setScene(new Scene(root));
-//        stage.show();
-
-//        var resource = Main.class.getResource("LoginPage.fxml");
-//        Parent newRoot = FXMLLoader.load(resource);
-//        Scene loginScene = new Scene(newRoot);
         var loginScene = Main.getSceneByName("LoginPage.fxml");
         Main.setScene(loginScene);
+    }
 
-//        Stage mainStage = (Stage) loginButton.getScene().getWindow();
-//        mainStage.setScene(loginScene);
-
-//        Main m = new Main();
-//        m.changeScene("LoginPage.fxml");
+    @FXML
+    public void showRegisterScreen(ActionEvent event) throws IOException {
+        var registerScene = Main.getSceneByName("RegisterPage.fxml");
+        Main.setScene(registerScene);
     }
 }
