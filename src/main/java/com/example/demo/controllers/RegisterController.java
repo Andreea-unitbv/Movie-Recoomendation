@@ -1,7 +1,6 @@
 package com.example.demo.controllers;
 
 
-
 import com.example.demo.Main;
 import com.example.demo.database.DBLogin;
 import com.example.demo.database.DBRegister;
@@ -22,14 +21,12 @@ public class RegisterController implements Initializable {
     @FXML
     private ComboBox<String> roleComboBox;
     @FXML
-    private TextField usernameTextField;
+    private TextField usernameTextField, passwordTextField;
     @FXML
-    private TextField passwordTextField;
-    @FXML
-    private Button registerButton;
+    private Button registerButton, exitButton;
     @FXML
     private Label validation;
-    public DBRegister dbRegister;
+    private DBRegister dbRegister;
 
 
     @Override
@@ -39,15 +36,16 @@ public class RegisterController implements Initializable {
         System.out.println("Initialized Register..");
     }
 
+    public void ExitPressed(ActionEvent event) throws IOException {
+        var feedScene = Main.getSceneByName("hello-view.fxml");
+        Main.setScene(feedScene);
+    }
+
     public void registerPressed(ActionEvent event) throws IOException {
         var registerSuccessful = checkRegister();
-        if (registerSuccessful && usernameTextField.getText().toString()=="user") {
-            var feedScene = Main.getSceneByName("Feed.fxml");
+        if (registerSuccessful) {
+            var feedScene = Main.getSceneByName("LoginPage.fxml");
             Main.setScene(feedScene);
-        }
-        else{
-            var addMovieScene= Main.getSceneByName("AddMoviePage.fxml");
-            Main.setScene(addMovieScene);
         }
     }
 

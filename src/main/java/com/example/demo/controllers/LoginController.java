@@ -19,11 +19,9 @@ public class LoginController implements Initializable {
     @FXML
     private ComboBox<String> roleComboBox;
     @FXML
-    private TextField usernameTextField;
+    private TextField usernameTextField, passwordTextField;
     @FXML
-    private TextField passwordTextField;
-    @FXML
-    private Button loginButton;
+    private Button loginButton, exitButton;
     @FXML
     private Label validation;
     private DBLogin dbLogin;
@@ -36,13 +34,19 @@ public class LoginController implements Initializable {
         System.out.println("Initialized Login..");
     }
 
+    public void ExitPressed(ActionEvent event) throws IOException {
+        var feedScene = Main.getSceneByName("hello-view.fxml");
+        Main.setScene(feedScene);
+    }
     public void loginPressed(ActionEvent event) throws IOException {
         var loginSuccessful = checkLogin();
-        if (loginSuccessful && usernameTextField.getText().toString()=="user") {
+        var role=roleComboBox.getValue().toString();
+        System.out.println(role);
+        if (loginSuccessful && role=="user") {
             var feedScene = Main.getSceneByName("Feed.fxml");
             Main.setScene(feedScene);
         }
-        else{
+        else if (loginSuccessful&&role=="admin"){
             var addMovieScene= Main.getSceneByName("AddMoviePage.fxml");
             Main.setScene(addMovieScene);
         }

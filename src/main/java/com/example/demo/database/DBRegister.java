@@ -1,14 +1,10 @@
 package com.example.demo.database;
-import java.util.Scanner;
-
 
 public class DBRegister {
     private DBConnection database;
-    private Scanner scanner;
 
     public DBRegister() {
-        database = new DBConnection();
-        scanner = new Scanner(System.in);
+        database = DB.getDb();
     }
 
     public boolean run(String username, String role, String password) {

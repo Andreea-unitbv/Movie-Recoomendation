@@ -1,14 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.demo.controllers.AddMovieController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: rgb(125,185,215);" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.controllers.AddMovieController">
+   <children>
+      <VBox alignment="CENTER" layoutX="134.0" layoutY="90.0" prefHeight="241.0" prefWidth="332.0" style="-fx-background-color: white;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="Add a new movie" textAlignment="CENTER" />
+            <HBox prefHeight="100.0" prefWidth="200.0" />
+            <VBox prefHeight="209.0" prefWidth="289.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="98.0" text="Title" />
+                        <TextField fx:id="titleBox" prefHeight="25.0" prefWidth="178.0" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="98.0" text="Genre" />
+                        <TextField fx:id="genreBox" prefHeight="25.0" prefWidth="178.0" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="97.0" text="Director" />
+                        <TextField fx:id="directorBox" prefHeight="25.0" prefWidth="180.0" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="97.0" text="Studio" />
+                        <TextField fx:id="studioBox" prefHeight="25.0" prefWidth="180.0" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="97.0" text="Release date" />
+                  <DatePicker fx:id="dateBox" prefHeight="25.0" prefWidth="177.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="validation" text="Label" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="3.0" prefWidth="332.0">
+               <children>
+                  <Button fx:id="addMovieButton" mnemonicParsing="false" onAction="#AddMoviePressed" text="Add movie" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Button fx:id="exitButton" layoutX="25.0" layoutY="33.0" mnemonicParsing="false" onAction="#ExitPressed" prefHeight="25.0" prefWidth="104.0" text="Exit" />
+   </children>
 </AnchorPane>

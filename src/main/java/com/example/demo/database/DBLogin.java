@@ -1,15 +1,13 @@
 package com.example.demo.database;
 
 import java.sql.ResultSet;
-import java.util.Scanner;
+
 
 public class DBLogin {
     private  DBConnection database;
-    private  Scanner scanner;
 
-    public DBLogin() {
-        database = new DBConnection();
-        scanner = new Scanner(System.in);
+    public  DBLogin() {
+        database = DB.getDb();
     }
 
     public boolean run(String username,String password, String role) {
