@@ -4,20 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5cb74e13-7bc9-470d-84d0-ae61b726a6ec" name="Changes" comment="Register working. Added movie table.">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/images/movie3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/images/usericon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/database/DB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/database/DBMovie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controllers/AddMovieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controllers/AddMovieController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controllers/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controllers/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controllers/RegisterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/database/DBLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/database/DBLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/database/DBRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/database/DBRegister.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/demo/AddMoviePage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/demo/AddMoviePage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/demo/LoginPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/demo/LoginPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/demo/RegisterPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/demo/RegisterPage.fxml" afterDir="false" />
+    <list default="true" id="5cb74e13-7bc9-470d-84d0-ae61b726a6ec" name="Changes" comment="Add movie working.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +97,7 @@
       <updated>1675281437445</updated>
       <workItem from="1675281441116" duration="76000" />
       <workItem from="1675281580843" duration="2371000" />
-      <workItem from="1675334009389" duration="20856000" />
+      <workItem from="1675334009389" duration="21818000" />
     </task>
     <task id="LOCAL-00001" summary="Login working">
       <created>1675282601253</created>
@@ -124,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675343516528</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add movie working.">
+      <created>1675357975656</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1675357975656</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,6 +140,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Login working" />
     <MESSAGE value="Register working. Added movie table." />
-    <option name="LAST_COMMIT_MESSAGE" value="Register working. Added movie table." />
+    <MESSAGE value="Add movie working." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add movie working." />
   </component>
 </project>
