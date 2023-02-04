@@ -41,7 +41,6 @@ public class LoginController implements Initializable {
     public void loginPressed(ActionEvent event) throws IOException {
         var loginSuccessful = checkLogin();
         var role=roleComboBox.getValue().toString();
-        System.out.println(role);
         if (loginSuccessful && role=="user") {
             var feedScene = Main.getSceneByName("Feed.fxml");
             Main.setScene(feedScene);

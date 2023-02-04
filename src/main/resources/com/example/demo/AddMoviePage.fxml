@@ -8,7 +8,6 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: rgb(125,185,215);" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.controllers.AddMovieController">
    <children>
       <VBox alignment="CENTER" layoutX="134.0" layoutY="90.0" prefHeight="241.0" prefWidth="332.0" style="-fx-background-color: white;">
@@ -51,7 +50,7 @@
             </HBox>
             <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
                <children>
-                  <Label fx:id="validation" text="Label" />
+                  <Label fx:id="validation" />
                </children>
             </HBox>
             <HBox alignment="CENTER" prefHeight="3.0" prefWidth="332.0">

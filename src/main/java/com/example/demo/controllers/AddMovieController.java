@@ -36,6 +36,7 @@ public class AddMovieController {
     public void ExitPressed(ActionEvent event) throws IOException {
         var feedScene = Main.getSceneByName("hello-view.fxml");
         Main.setScene(feedScene);
+        validation.setText("");
     }
 
     public void AddMoviePressed(ActionEvent event) throws IOException {

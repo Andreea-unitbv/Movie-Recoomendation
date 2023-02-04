@@ -4,9 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5cb74e13-7bc9-470d-84d0-ae61b726a6ec" name="Changes" comment="Add movie working.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Movie.java" afterDir="false" />
+    <list default="true" id="5cb74e13-7bc9-470d-84d0-ae61b726a6ec" name="Changes" comment="Created Movie class">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/Query.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9e60c4e1-0d83-4b0b-94e9-ee89c6ab9383.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9e60c4e1-0d83-4b0b-94e9-ee89c6ab9383.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9e60c4e1-0d83-4b0b-94e9-ee89c6ab9383/storage_v2/_src_/database/imdb.omAxAA/schema/information_schema.FNRwLQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9e60c4e1-0d83-4b0b-94e9-ee89c6ab9383/storage_v2/_src_/database/imdb.omAxAA/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9e60c4e1-0d83-4b0b-94e9-ee89c6ab9383/storage_v2/_src_/database/imdb.omAxAA/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9e60c4e1-0d83-4b0b-94e9-ee89c6ab9383/storage_v2/_src_/database/imdb.omAxAA/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9e60c4e1-0d83-4b0b-94e9-ee89c6ab9383/storage_v2/_src_/database/imdb.omAxAA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9e60c4e1-0d83-4b0b-94e9-ee89c6ab9383/storage_v2/_src_/database/imdb.omAxAA/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controllers/AddMovieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controllers/AddMovieController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controllers/FeedController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controllers/FeedController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controllers/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/database/DB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/database/DB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/database/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/database/DBConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/demo/AddMoviePage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/demo/AddMoviePage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/demo/Feed.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/demo/Feed.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,33 +53,41 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2L9RhIZimc5p21OM5grOWMxvhSW" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Andreea/OneDrive/Desktop/postgresql-42.5.1.jar",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Andreea/OneDrive/Desktop/postgresql-42.5.1.jar&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.demo" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.demo.Main" />
@@ -97,7 +118,12 @@
       <updated>1675281437445</updated>
       <workItem from="1675281441116" duration="76000" />
       <workItem from="1675281580843" duration="2371000" />
-      <workItem from="1675334009389" duration="21818000" />
+      <workItem from="1675334009389" duration="26521000" />
+      <workItem from="1675415894181" duration="4014000" />
+      <workItem from="1675424642033" duration="930000" />
+      <workItem from="1675428399394" duration="3658000" />
+      <workItem from="1675458605591" duration="5680000" />
+      <workItem from="1675493693820" duration="10203000" />
     </task>
     <task id="LOCAL-00001" summary="Login working">
       <created>1675282601253</created>
@@ -120,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675357975656</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Created Movie class">
+      <created>1675358930372</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1675358930372</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,6 +174,7 @@
     <MESSAGE value="Login working" />
     <MESSAGE value="Register working. Added movie table." />
     <MESSAGE value="Add movie working." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add movie working." />
+    <MESSAGE value="Created Movie class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created Movie class" />
   </component>
 </project>
